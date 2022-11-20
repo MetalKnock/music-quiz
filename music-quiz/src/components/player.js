@@ -22,7 +22,11 @@ function createPlayer(parentNode) {
 
   const volume = createHtmlTag("div", "player__volume volume", controls);
 
-  const volumeButton = createHtmlTag("div", "volume__button", volume);
+  const volumeButton = createHtmlTag(
+    "div",
+    "volume__button volume__button--on",
+    volume
+  );
 
   const volumeImage = createHtmlTag(
     "img",

@@ -1,3 +1,6 @@
+import volumeOn from "../assets/img/volume-on.svg";
+import volumeOff from "../assets/img/volume-off.svg";
+
 let clickPlayerVolumeSliderListener = new AbortController();
 
 function clickPlayerVolumeSlider(player, audio) {
@@ -17,32 +20,39 @@ function removeClickPlayerVolumeSlider() {
 
 function handleClickPlayerVolumeSlider(player, audio) {
   return function curredFunc(e) {
-    const volumeImg = player.querySelector(".volume__image");
-    if (e.target.classList.contains("volume__slider")) {
-      const volumeSliderWidth = window.getComputedStyle(e.target).width;
-
-      let newVolume = e.offsetX / parseInt(volumeSliderWidth);
-      if (newVolume <= 0) {
-        newVolume = 0;
-        volumeImg.click();
-      }
-
-      audio.volume = newVolume;
-      const percentage = e.target.querySelector(".volume__percentage");
-      percentage.style.width = newVolume * 100 + "%";
-    } else if (e.target.classList.contains("volume__percentage")) {
-      const volumeSliderWidth = window.getComputedStyle(
-        e.target.parentNode
-      ).width;
-
-      let newVolume = e.offsetX / parseInt(volumeSliderWidth);
-      if (newVolume <= 0) {
-        newVolume = 0;
-      }
-
-      audio.volume = newVolume;
-      e.target.style.width = newVolume * 100 + "%";
+    if (
+      !e.target.classList.contains("volume__slider") &&
+      !e.target.classList.contains("volume__percentage")
+    ) {
+      return;
     }
+
+    const volumeButton = player.querySelector(".volume__button");
+    const volumeImage = player.querySelector(".volume__image");
+    let volumeSliderWidth;
+    let percentage;
+    if (e.target.classList.contains("volume__slider")) {
+      volumeSliderWidth = window.getComputedStyle(e.target).width;
+      percentage = e.target.querySelector(".volume__percentage");
+    } else if (e.target.classList.contains("volume__percentage")) {
+      volumeSliderWidth = window.getComputedStyle(e.target.parentNode).width;
+      percentage = e.target;
+    }
+
+    let newVolume = e.offsetX / parseInt(volumeSliderWidth);
+    if (newVolume <= 0.03) {
+      newVolume = 0;
+      volumeImage.src = volumeOff;
+      volumeButton.classList.remove("volume__button--on");
+      volumeButton.classList.add("volume__button--off");
+    } else {
+      volumeImage.src = volumeOn;
+      volumeButton.classList.remove("volume__button--off");
+      volumeButton.classList.add("volume__button--on");
+    }
+
+    audio.volume = newVolume;
+    percentage.style.width = newVolume * 100 + "%";
   };
 }
 
