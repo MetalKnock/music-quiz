@@ -38,9 +38,11 @@ const body = document.querySelector(".body");
 const wrapper = createHtmlTag("div", "wrapper", body);
 const header = createHeader(wrapper);
 const container = createMain(wrapper);
-createFooter(wrapper);
+const footer = createFooter(wrapper);
 
-clickBurgerMenu(header);
+const burgerMenu = header.querySelector(".burger-menu");
+
+clickBurgerMenu(burgerMenu);
 clickLanguageButton(header);
 
 router(window.location.hash, container);
