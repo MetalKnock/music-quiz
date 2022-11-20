@@ -1,0 +1,43 @@
+const interfaceRuData = {
+  buttonLanguage: "Язык",
+  headerLink1: "Главная",
+  headerLink2: "Викторина",
+  headerLink3: "Галерея",
+  homeTitle: "Добро пожаловать на музыкальную викторину",
+  homeSubtitle: "Испытай себя, нажми на кнопку",
+  homeLink: "Начать викторину",
+  gameDetailsHint: "Прослушай мелодию и дай правильный ответ",
+  buttonNextLevel: "Следующий уровень",
+  resultsTitle: "Поздравляем",
+  resultsSubtitle1: "Вы набрали",
+  resultsSubtitle2: "из 30 возможных баллов",
+  resultsButton: "Попробовать еще раз",
+  resultsWin1: "Вы выиграли викторину. Вы набрали",
+  resultsWin2: "из 30 возможных баллов",
+  year: "2022",
+  score: "Общий счет: ",
+  categories: ["NES", "SEGA", "PS 1", "PS 2", "PC", "ANDROID"],
+};
+
+const interfaceEngData = {
+  buttonLanguage: "Language",
+  headerLink1: "Home",
+  headerLink2: "Quiz",
+  headerLink3: "Gallery",
+  homeTitle: "Welcome to the music quiz",
+  homeSubtitle: "Challenge yourself, press the button",
+  homeLink: "Start Quiz",
+  gameDetailsHint: "Listen to the melody and give the correct answer",
+  buttonNextLevel: "Next level",
+  resultsTitle: "Congratulations",
+  resultsSubtitle1: "You scored",
+  resultsSubtitle2: "out of 30 possible points",
+  resultsButton: "Try again",
+  resultsWin1: "You won the quiz. You scored",
+  resultsWin2: "of 30 possible points",
+  year: "2022",
+  score: "Total score: ",
+  categories: ["NES", "SEGA", "PS 1", "PS 2", "PC", "ANDROID"],
+};
+
+export { interfaceRuData, interfaceEngData };

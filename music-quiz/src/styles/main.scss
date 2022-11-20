@@ -3,3 +3,245 @@
 @import "reset";
 @import "libs";
 @import "global";
+@import "home";
+@import "quiz";
+@import "results";
+@import "gallery";
+
+.body {
+  background: $background-gradiend;
+  color: $color-text;
+}
+
+.header {
+  &__container {
+    min-height: 80px;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &__logo {
+  }
+
+  &__menu {
+    flex: 0 0 40%;
+  }
+}
+
+.burger-menu {
+  display: none;
+  &--active {
+    & .burger-menu__lines {
+      background-color: transparent;
+
+      &::before {
+        top: 0;
+        transform: rotate(45deg);
+      }
+
+      &::after {
+        top: 0;
+        transform: rotate(-45deg);
+      }
+    }
+
+    & .burger-menu__nav {
+      right: 0;
+      transition: 0.4s;
+    }
+
+    & .burger-menu__overlay {
+      display: block;
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+  }
+
+  &__button {
+    cursor: pointer;
+    position: fixed;
+    top: 10px;
+    right: 15px;
+    display: block;
+    z-index: 8;
+    width: 50px;
+    height: 50px;
+    transition: 0.4s;
+  }
+
+  &__lines {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    &::before {
+      content: "";
+      top: -12px;
+    }
+
+    &::after {
+      content: "";
+      top: 12px;
+    }
+  }
+
+  &__lines,
+  &__lines::after,
+  &__lines::before {
+    position: absolute;
+    width: 50px;
+    height: 4px;
+    border-radius: 5px;
+    background-color: $color-second;
+    transition: 0.4s;
+  }
+
+  &__nav {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    z-index: 7;
+    height: 100%;
+    padding: 120px 15px 0px 15px;
+    border-radius: 15px;
+    transition: 0.8s;
+    background: $background-card;
+  }
+
+  &__overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 6;
+  }
+}
+
+.logo {
+  &__image {
+    width: 40px;
+  }
+}
+
+.menu {
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  &__item {
+  }
+
+  &__link {
+  }
+}
+
+.footer {
+  &__container {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  &__github {
+  }
+
+  &__year {
+  }
+
+  &__rs-school {
+  }
+}
+
+.github {
+  &__image {
+    width: 40px;
+    filter: invert(16%) sepia(54%) saturate(5914%) hue-rotate(217deg)
+      brightness(92%) contrast(98%);
+    &:hover {
+      filter: invert(16%) sepia(54%) saturate(5914%) hue-rotate(217deg)
+        brightness(92%) contrast(98%) drop-shadow(2px 2px 2px $color-shadow);
+    }
+  }
+}
+
+.rs-school {
+  &__image {
+    width: 70px;
+    filter: invert(16%) sepia(54%) saturate(5914%) hue-rotate(217deg)
+      brightness(92%) contrast(98%);
+    &:hover {
+      filter: invert(16%) sepia(54%) saturate(5914%) hue-rotate(217deg)
+        brightness(92%) contrast(98%) drop-shadow(2px 2px 2px $color-shadow);
+    }
+  }
+}
+
+.button {
+  display: block;
+  text-align: center;
+  border: none;
+  border-radius: 15px;
+  color: white;
+  padding: 10px 23px;
+  text-decoration: none;
+  transition: 0.5s;
+  background: none;
+  cursor: pointer;
+  border-bottom: 1px solid $color-second;
+  &:hover {
+    border-bottom: 1px solid $color-second;
+    background: $color-second url("../assets/img/pixel4.png");
+    transition-delay: 0.8s;
+    background-size: 180px;
+    animation: animate 0.8s steps(8) forwards;
+    filter: drop-shadow(2px 2px 2px $color-shadow);
+  }
+  &--disable {
+    color: darkslategray;
+    cursor: not-allowed;
+    &:hover {
+      border-bottom: 1px solid $color-second;
+      color: darkslategray;
+      background: none;
+      animation: none;
+    }
+  }
+  &--active {
+    transition: 0s;
+
+    background: $color-second;
+    &:hover {
+      transition-delay: none;
+      background: $color-second;
+      animation: none;
+      filter: none;
+    }
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position-y: 0;
+  }
+  100% {
+    background-position-y: -480px;
+  }
+}
+
+@media (max-width: 640px) {
+  .header__container {
+    & .header {
+      &__burger-menu {
+        display: block;
+      }
+      &__menu {
+        display: none;
+      }
+    }
+  }
+}

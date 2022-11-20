@@ -1,0 +1,37 @@
+.results {
+  display: flex;
+  justify-content: space-between;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    flex-grow: 1;
+  }
+
+  &__title {
+    font-size: 50px;
+  }
+
+  &__subtitle,
+  &__win {
+    font-size: 20px;
+  }
+  &__image {
+    flex: 0 0 40%;
+    width: 200px;
+  }
+}
+@media (max-width: 639px) {
+  .results {
+    flex-direction: column-reverse;
+    align-items: center;
+    &__title {
+      font-size: 40px;
+    }
+    &__image {
+      width: 90%;
+    }
+  }
+}
