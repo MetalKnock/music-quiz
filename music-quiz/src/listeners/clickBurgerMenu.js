@@ -17,10 +17,7 @@ function removeClickBurgerMenu() {
 
 function handleClickBurgerMenu(header) {
   return function curredFunc(e) {
-    if (
-      e.target.classList.contains("burger-menu__button") ||
-      e.target.parentNode.classList.contains("burger-menu__button")
-    ) {
+    if (!e.target.classList.contains("burger-menu__nav")) {
       const burgerMenu = header.querySelector(".burger-menu");
       burgerMenu.classList.toggle("burger-menu--active");
     }
