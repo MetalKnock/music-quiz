@@ -1,9 +1,6 @@
 import { createPlayer } from "../components/player";
-import gamesData from "../data/games";
-import gamesDataEnglish from "../data/gamesEnglish";
 import { initPlayer } from "../helpers/initPlayer";
 import { createHtmlTag } from "./createHtmlTag";
-import { getLanguage } from "./getLanguage";
 
 function renderDetails(detailsGame, levelNumber, audio, i, data) {
   detailsGame.innerHTML = "";

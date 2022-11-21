@@ -4,7 +4,6 @@
   gap: 50px;
 
   &__card {
-    // background: $background-card;
     padding: 15px;
     border-radius: 15px;
   }
@@ -14,9 +13,6 @@
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(6, 1fr);
     grid-gap: 20px;
-  }
-
-  &__item {
   }
 }
 

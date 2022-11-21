@@ -1,4 +1,3 @@
-import { createCard } from "../components/card";
 import { getData } from "../helpers/getData";
 
 let clickGalleryListener = new AbortController();
@@ -41,6 +40,7 @@ function handleClickGallery(gallery, audio) {
       const cardDescription = gallery.querySelector(".card__description");
       const cardPlayer = gallery.querySelector(".card__player");
       const playerPlay = cardPlayer.querySelector(".player__play");
+
       cardImage.setAttribute("src", data[level][id].image);
       cardName.innerText = data[level][id].name;
       cardGenre.innerText = data[level][id].genre;

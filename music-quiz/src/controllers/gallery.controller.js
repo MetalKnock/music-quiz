@@ -1,7 +1,5 @@
 import { createHtmlTag } from "../helpers/createHtmlTag";
-import { initPlayer } from "../helpers/initPlayer";
 import { getData } from "../helpers/getData";
-import { createPlayer } from "../components/player";
 import { clickGallery } from "../listeners/clickGallery";
 import { createCard } from "../components/card";
 

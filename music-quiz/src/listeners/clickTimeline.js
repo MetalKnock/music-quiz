@@ -6,7 +6,7 @@ function clickTimeline(player, audio) {
   }
   player.addEventListener(
     "click",
-    handleClickTimeline(player, audio),
+    handleClickTimeline(audio),
     clickTimelineListener
   );
 }
@@ -15,7 +15,7 @@ function removeClickTimeline() {
   clickTimelineListener.abort();
 }
 
-function handleClickTimeline(player, audio) {
+function handleClickTimeline(audio) {
   return function curredFunc(e) {
     if (e.target.classList[0] === "player__timeline") {
       const timelineWidth = window

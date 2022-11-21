@@ -6,7 +6,6 @@
   &__header {
     grid-column: 1/5;
     margin-bottom: 100px;
-    // background: $background-card;
     padding: 20px;
     border-radius: 15px;
   }
@@ -33,27 +32,11 @@
   }
 }
 
-.header {
-  &__menu {
-  }
-}
-
-.menu {
-  &__list {
-  }
-
-  &__item {
-  }
-
-  &__link {
-  }
-}
-
 .random-game {
-  // background: $background-card;
   border-radius: 15px;
   display: flex;
   align-items: center;
+  padding: 15px;
 
   &__image {
     width: 200px;
@@ -62,7 +45,7 @@
 
   &__inner {
     flex-grow: 1;
-    padding: 0 20px 0 20px;
+    padding: 0 0 0 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
@@ -162,9 +145,6 @@
   &__time {
     width: 100%;
   }
-
-  &__volume {
-  }
 }
 
 .volume {
@@ -203,15 +183,6 @@
     border-radius: 2px;
     height: 100%;
     width: 75%;
-  }
-
-  &:hover {
-    .volume {
-      &__slider {
-        left: 40px;
-        width: 153px;
-      }
-    }
   }
 }
 
@@ -311,14 +282,8 @@
 }
 
 .game-details {
-  // background: $background-card;
   border-radius: 15px;
   padding: 20px;
-  &__hint {
-  }
-
-  &__card {
-  }
 }
 
 .category {

@@ -1,7 +1,3 @@
-import gamesData from "../data/games";
-import gamesDataEnglish from "../data/gamesEnglish";
-import { interfaceRuData, interfaceEngData } from "../data/interface";
-import { changeLocalization } from "../helpers/changeLocalization";
 import { getData, getDataInterface } from "../helpers/getData";
 
 let clickLanguageButtonListener = new AbortController();

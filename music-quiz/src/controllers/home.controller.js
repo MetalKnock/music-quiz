@@ -1,6 +1,5 @@
 import { createHtmlTag } from "../helpers/createHtmlTag";
 import { getDataInterface } from "../helpers/getData";
-import { clickLanguageButton } from "../listeners/clickLanguageButton";
 import homeImg from "../assets/img/home-img.png";
 import homeImg2 from "../assets/img/home-img2.png";
 import arrowImg from "../assets/img/arrow-down.svg";

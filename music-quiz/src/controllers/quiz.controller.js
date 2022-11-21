@@ -1,4 +1,3 @@
-import { createQuiz } from "../components/quiz";
 import initLevel from "../helpers/initLevel";
 
 export default () => {

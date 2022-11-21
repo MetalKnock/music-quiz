@@ -1,7 +1,5 @@
 import { changeScore } from "./changeScore";
 import showRandomGame from "./showRandomGame";
-import win from "../assets/audio/win.mp3";
-import lose from "../assets/audio/lose.mp3";
 import { clickNextLevel } from "../listeners/clickNextLevel";
 import { renderScore } from "./renderScore";
 

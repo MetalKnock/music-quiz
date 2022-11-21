@@ -9,7 +9,7 @@ function clickNextLevel(button, divElement, levelNumber, score, secretAudio) {
   }
   button.addEventListener(
     "click",
-    handleClickNextLevel(button, divElement, levelNumber, score, secretAudio),
+    handleClickNextLevel(divElement, levelNumber, score, secretAudio),
     clickNextLevelListener
   );
 }
@@ -18,13 +18,7 @@ function removeClickNextLevel() {
   clickNextLevelListener.abort();
 }
 
-function handleClickNextLevel(
-  button,
-  divElement,
-  levelNumber,
-  score,
-  secretAudio
-) {
+function handleClickNextLevel(divElement, levelNumber, score, secretAudio) {
   return function curredFunc(e) {
     levelNumber++;
     removeClickAnswersList();

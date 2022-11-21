@@ -8,7 +8,7 @@ function clickPlayerPlay(player, audio) {
   }
   player.addEventListener(
     "click",
-    handleClickPlayerPlay(player, audio),
+    handleClickPlayerPlay(audio),
     clickPlayerPlayListener
   );
 }
@@ -17,7 +17,7 @@ function removeClickPlayerPlay() {
   clickPlayerPlayListener.abort();
 }
 
-function handleClickPlayerPlay(player, audio) {
+function handleClickPlayerPlay(audio) {
   return function curredFunc(e) {
     if (e.target.classList.contains("player__play")) {
       console.log("click player play");

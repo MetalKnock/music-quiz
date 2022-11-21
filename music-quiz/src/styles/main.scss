@@ -20,9 +20,6 @@
     align-items: center;
   }
 
-  &__logo {
-  }
-
   &__menu {
     flex: 0 0 40%;
   }
@@ -123,7 +120,10 @@
 
 .logo {
   &__image {
-    width: 40px;
+    height: 40px;
+    &:hover {
+      filter: drop-shadow(2px 2px 2px $color-shadow);
+    }
   }
 }
 
@@ -133,27 +133,12 @@
     justify-content: space-between;
     gap: 20px;
   }
-
-  &__item {
-  }
-
-  &__link {
-  }
 }
 
 .footer {
   &__container {
     flex-direction: row;
     align-items: center;
-  }
-
-  &__github {
-  }
-
-  &__year {
-  }
-
-  &__rs-school {
   }
 }
 

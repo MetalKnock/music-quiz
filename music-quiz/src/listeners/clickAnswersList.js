@@ -25,7 +25,6 @@ function clickAnswersList(
   answers.addEventListener(
     "click",
     handleAnswersList(
-      answers,
       divElement,
       levelNumber,
       secretAnswer,
@@ -44,7 +43,6 @@ function removeClickAnswersList() {
 }
 
 function handleAnswersList(
-  answers,
   divElement,
   levelNumber,
   secretAnswer,

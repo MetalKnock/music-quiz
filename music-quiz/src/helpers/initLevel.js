@@ -1,10 +1,8 @@
 import { clickAnswersList } from "../listeners/clickAnswersList";
-import getRandomAudio from "./getRandomAudio";
 import getRandomNumber from "./getRandomNumber";
 import { initPlayer } from "./initPlayer";
 import { renderAnswers } from "./renderAnswers";
 import setCategory from "./setCategory";
-
 import gamesData from "../data/games";
 import { renderScore } from "./renderScore";
 import { createQuiz } from "../components/quiz";
