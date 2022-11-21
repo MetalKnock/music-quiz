@@ -66,10 +66,10 @@ import imgpc4 from "../assets/img/pc/imgpc4.jpeg";
 import imgpc5 from "../assets/img/pc/imgpc5.jpeg";
 import imgpc6 from "../assets/img/pc/imgpc6.jpeg";
 import imgmobile1 from "../assets/img/mobile/imgmobile1.png";
-import imgmobile2 from "../assets/img/mobile/imgmobile2.png";
+import imgmobile2 from "../assets/img/mobile/imgmobile2.jpeg";
 import imgmobile3 from "../assets/img/mobile/imgmobile3.jpeg";
 import imgmobile4 from "../assets/img/mobile/imgmobile4.jpeg";
-import imgmobile5 from "../assets/img/mobile/imgmobile5.jpeg";
+import imgmobile5 from "../assets/img/mobile/imgmobile5.png";
 import imgmobile6 from "../assets/img/mobile/imgmobile6.jpeg";
 
 const gamesDataEnglish = [
@@ -289,10 +289,10 @@ const gamesDataEnglish = [
     },
     {
       id: 6,
-      name: "Kingdom Hearts",
-      genre: "Action",
+      name: "Resident Evil 4",
+      genre: "Survival horror",
       description:
-        "The plot tells of a boy named Sora, who turns out to be a chosen key-cat. Traveling between the worlds, he fights with the forces of darkness. At the beginning of the trip to him, Guphi and Donald Duck join him, who help him.",
+        "Autumn 2004. Leon Scott Kennedy, a former Raccoon City police officer turned U.S. government agent, sets out to find Ashley Graham, the President's daughter, who has been kidnapped from college by a mysterious cult. He travels to a remote Spanish village where the kidnappers have fled.",
       image: imgpsTwo6,
       audio: psTwo6,
     },
@@ -365,10 +365,10 @@ const gamesDataEnglish = [
     },
     {
       id: 2,
-      name: "Among Us",
+      name: "Monument valley",
       genre: "Indie game",
       description:
-        "The game was inspired by the Mafia team role-playing game with a detective plot, as well as the science fiction film “Something”. Players are randomly divided into two teams: crew members and traitors hidden among them. The crew members do not know which of their comrades traitor, and can vote with any character, trying to identify traitors with the help of deduction. The crew members win if they manage to get rid of the traitors or at least bring to the completion all the assignments proposed by the crew; The traitors win, if they manage to, without falling in, secretly kill a sufficient number of crew members or bring a large sabotage to the completion - for example, arrange molting in the reactor or stop supplying oxygen.",
+        "The player's task is to control a character named «Princess Ida», who must find a way out of the labyrinth. In total, Monument Valley has 10 labyrinths with several levels. The game is a turn-based puzzle game, meaning the player cannot die in the game or make a mistake. Its main task is to gradually search or build routes to get out of the maze. In the universe of the game, there are optical illusions and impossible figures. Ida is able to climb ladders and cross rounded objects. However, in order to cross various kinds of barriers, it is necessary to activate the mechanisms that change the routes of the labyrinth, or to change the camera angle in order to find a new route of passage using an optical illusion.",
       image: imgmobile2,
       audio: mobile2,
     },
@@ -392,10 +392,10 @@ const gamesDataEnglish = [
     },
     {
       id: 5,
-      name: "Levelhead",
-      genre: "Platformer",
+      name: "Crashlands",
+      genre: "Action adventure",
       description:
-        "LEVELHEAD tells of a small robot - an employee of the delivery bureau, the best logistics service in the galaxy! Clients have been trusting the company for more than a hundred years! Therefore, you must do everything so that the novice GR-18 robot becomes the best deliveryer who is not afraid of any dangers, is able to go through fire, water and pipes from an alien analogue of copper, cope with any opponents and hand it to the client to the package intact and preservation.",
+        "The game's plot begins with the Flux spaceship crashing on the planet Woanope. It's all the fault of the villain Hewgodooko, who just took and took an important piece of the ship. Flux is a space messenger, so the main task is to quickly establish communication with the home planet and call a tow truck. Actually, his work must be done on time, one way or another. That's just to complete the mission, you need a source of energy, which, due to a sad set of circumstances, is also looking for Hewgodooko, sweeping away everything in its path. Accordingly, it is not possible to complete the task alone. As we play, the JuiceBox robot assistant will help us.",
       image: imgmobile5,
       audio: mobile5,
     },
