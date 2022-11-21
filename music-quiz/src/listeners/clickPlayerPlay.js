@@ -20,7 +20,6 @@ function removeClickPlayerPlay() {
 function handleClickPlayerPlay(audio) {
   return function curredFunc(e) {
     if (e.target.classList.contains("player__play")) {
-      console.log("click player play");
       if (audio.paused) {
         e.target.classList.remove("player__play--start");
         e.target.classList.add("player__play--pause");

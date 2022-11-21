@@ -10,7 +10,6 @@ function initPlayer(player, audio) {
   clickPlayerVolumeSlider(player, audio);
   clickVolumeButton(player, audio);
   setTrueTimeLength(player, audio);
-
   updatePlayer(player, audio);
   clickTimeline(player, audio);
 }

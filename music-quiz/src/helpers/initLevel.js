@@ -19,7 +19,6 @@ export default function initLevel(divElement, levelNumber, score, secretAudio) {
   secretAudio.setAttribute("src", secretAudioSrc);
 
   renderScore(divElement, score);
-
   setCategory(headerMenu, levelNumber);
   initPlayer(randomGamePlayer, secretAudio);
   renderAnswers(divElement, levelNumber);
